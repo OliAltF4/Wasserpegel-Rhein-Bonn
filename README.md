@@ -23,3 +23,7 @@ This project is a Telegram bot designed to provide real-time water level updates
 5. Once created,you will receive a token that looks like this: 123456789:ABCdefGhIJklMnoPQRstUVwXyZ123456789
 
 Important: Keep this token secure, it grants controle over your bot.
+
+### Set the token as an Environment Variable
+
+For the bot to work locally or in a Docker container,
