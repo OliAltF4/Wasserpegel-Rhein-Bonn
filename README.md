@@ -66,7 +66,31 @@ To start the bot, use the following command. Replace INSERT-TOKEN-HERE with your
 
 To run the container in detached mode (in the background), add the -d flag:
 
--
+-docker run -d --name name -e TELEGRAM_TOKEN="INSERT-TOKEN-HERE" ghcr.io/username/repositoryname
+
+### 3. Build the Docker Image
+
+If you are building the image locally from a Dockerfile, use:
+
+-docker build -t your-image-name .
+
+Replace your-image-name with a name for your image.
+
+### 4. List Docker Images
+
+To view all locally available Docker images, run:
+
+-docker images
+
+### 5. Remove a Docker Image 
+
+To delete a specific Docker image by its ID or name, use:
+
+-docker rmi image-id-or-name
+
+Replace image-id-or-name with the images ID or name shown in the output of the docker images.
+
+
 
 
 
