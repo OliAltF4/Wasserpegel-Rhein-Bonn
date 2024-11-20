@@ -28,3 +28,5 @@ Important: Keep this token secure, it grants controle over your bot.
 
 For the bot to work locally or in a Docker container, you need to configure the token as an environment variable named TELEGRAM_TOKEN.
 
+		-Local Dvelopment: Add the following line to your terminal or .env file:
+
