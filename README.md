@@ -28,4 +28,13 @@ Important: Keep this token secure, it grants controle over your bot.
 
 For the bot to work locally or in a Docker container, you need to configure the token as an environment variable named TELEGRAM_TOKEN.
 
--Local Development
+1. Local Development: Add the following line to your teminal:
+	-export TELEGRAM_TOKEN="your-bot-token"
+Replace your-bot-token with the token provided by BotFather.
+
+2. Running in Docker: When running the bot in a Docker container, pass the token as an environment variable: 
+	-docker run -e TELEGRAM_TOKEN="your-bot-token" your-docker-image
+
+### Verify the Setup
+
+
