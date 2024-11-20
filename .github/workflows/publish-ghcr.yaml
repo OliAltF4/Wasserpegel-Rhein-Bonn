@@ -16,8 +16,9 @@ jobs:
         run: echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u olialtf4 --password-stdin
       - name: Build and push the image with commit SHA tag
         run: |
-          docker build . -t ghcr.io/olialtf4/wasserpegel-rhein-bonn:${GITHUB_SHA::7}
+          docker build . -t ghcr.io/olialtf4/wasserpegel-rhein-bonn:${GITHUB_SHA::7} -t ghcr.io/olialtf4/wasserpegel-rhein-bonn:latest
           docker push ghcr.io/olialtf4/wasserpegel-rhein-bonn:${GITHUB_SHA::7}
+          docker push ghcr.io/olialtf4/wasserpegel-rhein-bonn:latest
 
   publish_tagged_image:
     needs: build_and_publish
