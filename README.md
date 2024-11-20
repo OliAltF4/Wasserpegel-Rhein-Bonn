@@ -54,6 +54,19 @@ Replace your-bot-token with the token provided by BotFather.
 
 You can now interact with your Bot by sending commands like /start, /current or /weekly in Telegram.
 
+## Docker
+
+### 1. Rund the Container
+
+To start the bot, use the following command. Replace INSERT-TOKEN-HERE with your actual Telegram bot Token:
+
+-dokcer run --name name -e TELEGRAM_TOKEN="INSERT-TOKEN-HERE" ghcr.io/username/repositoryname
+
+### 2. Run the Container in the Background
+
+To run the container in detached mode (in the background), add the -d flag:
+
+-
 
 
 
