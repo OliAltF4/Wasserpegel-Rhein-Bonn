@@ -90,6 +90,10 @@ To delete a specific Docker image by its ID or name, use:
 
 Replace image-id-or-name with the images ID or name shown in the output of the docker images.
 
+## Activity Diagram
+
+![Activity Diagram](pap.png)
+
 
 
 
