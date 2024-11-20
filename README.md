@@ -49,6 +49,7 @@ Replace your-bot-token with the token provided by BotFather.
 	Or start the Docker container:
 
 	-docker build -t water-level-bot .
+
 	-docker run -e TELEGRAM_TOKEN="your-bot-token" water-level-bot
 
 You can now interact with your Bot by sending commands like /start, /current or /weekly in Telegram.
