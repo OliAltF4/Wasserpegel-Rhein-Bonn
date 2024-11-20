@@ -26,4 +26,4 @@ Important: Keep this token secure, it grants controle over your bot.
 
 ### Set the token as an Environment Variable
 
-For the bot to work locally or in a Docker container,
+For the bot to work locally or in a Docker container,Hallo
