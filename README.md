@@ -28,14 +28,77 @@ Important: Keep this token secure, it grants controle over your bot.
 
 For the bot to work locally or in a Docker container, you need to configure the token as an environment variable named TELEGRAM_TOKEN.
 
-    -Local Development: Add the following line to your terminal or .env file:
-    export TELEGRAM_TOKEN="your-bot-token"
+1. Local Development: Add the following line to your teminal:
 
-    Replace your-bot-token with the token provided by BotFather.
-    If using a .env file, install a library like python-dotenv and load the variables in the script:
-    from dotenv import load_dotenv
-    load_dotenv()
+	-export TELEGRAM_TOKEN="your-bot-token"
 
-    -Running in Docker: When running the bot in a Docker container, pass the token as an environment variable:
-    docker run -e TELEGRAM_TOKEN="your-bot-token" your-docker-image
+Replace your-bot-token with the token provided by BotFather.
+
+2. Running in Docker: When running the bot in a Docker container, pass the token as an environment variable: 
+
+	-docker run -e TELEGRAM_TOKEN="your-bot-token" your-docker-image
+
+### Verify the Setup
+
+1. After setting up, start the bot:
+
+	Run the Python script locally:
+ 
+	-python app.py
+
+	Or start the Docker container:
+
+	-docker build -t water-level-bot .
+
+	-docker run -e TELEGRAM_TOKEN="your-bot-token" water-level-bot
+
+You can now interact with your Bot by sending commands like /start, /current or /weekly in Telegram.
+
+## Docker
+
+### 1. Rund the Container
+
+To start the bot, use the following command. Replace INSERT-TOKEN-HERE with your actual Telegram bot Token:
+
+-dokcer run --name name -e TELEGRAM_TOKEN="INSERT-TOKEN-HERE" ghcr.io/username/repositoryname
+
+### 2. Run the Container in the Background
+
+To run the container in detached mode (in the background), add the -d flag:
+
+-docker run -d --name name -e TELEGRAM_TOKEN="INSERT-TOKEN-HERE" ghcr.io/username/repositoryname
+
+### 3. Build the Docker Image
+
+If you are building the image locally from a Dockerfile, use:
+
+-docker build -t your-image-name .
+
+Replace your-image-name with a name for your image.
+
+### 4. List Docker Images
+
+To view all locally available Docker images, run:
+
+-docker images
+
+### 5. Remove a Docker Image 
+
+To delete a specific Docker image by its ID or name, use:
+
+-docker rmi image-id-or-name
+
+Replace image-id-or-name with the images ID or name shown in the output of the docker images.
+
+
+
+
+
+
+
+
+
+
+
+
 
